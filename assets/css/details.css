@@ -1,0 +1,14 @@
+.logo img {
+  width: 6em;
+}
+
+#main .inner h1 {
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.header-intro {
+  letter-spacing: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
