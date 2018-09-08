@@ -1,5 +1,15 @@
-.logo img {
-  width: 6em;
+/* header */
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+.profilepic {
+  width: 8em;
+  margin-bottom: none;
+  padding-bottom: none;
 }
 
 #main .inner h1 {
@@ -12,3 +22,21 @@
   font-size: 30px;
   font-weight: 400;
 }
+
+.header-intro a {
+  color: var(--hover-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* menu */
+#menu .inner h2 {
+  margin-bottom: 20px;
+}
+
+.menu-info {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* tiles */
