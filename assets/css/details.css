@@ -103,3 +103,14 @@
 .resume {
   font-size: 1em;
 }
+
+/* footer */
+.get-in-touch {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
