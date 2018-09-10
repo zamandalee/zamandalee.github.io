@@ -99,6 +99,7 @@
 
 .resume {
   font-size: 1em;
+  margin-bottom: 1em;
 }
 
 /* about me */
@@ -112,7 +113,11 @@
 }
 
 .contact-info {
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.1em;
+}
+
+.contact-info a {
+  color: var(--hover-color);
 }
