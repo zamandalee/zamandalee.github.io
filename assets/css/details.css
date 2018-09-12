@@ -41,8 +41,17 @@
 }
 
 /* tiles */
-.project-title, .project-arrow {
+.project-title, .project-arrow, .tiles .icon {
   font-size: 1.3em;
+}
+
+.github-title {
+  display: flex;
+  align-items: center;
+}
+
+.project-title {
+  padding-left: 0.7em;
 }
 
 .content-blurb, .content-tech {
