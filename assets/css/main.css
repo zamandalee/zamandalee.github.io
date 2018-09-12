@@ -2991,19 +2991,20 @@ input, select, textarea {
 			}
 
 				#menu > .inner > ul > li {
-					padding: 0;
+					padding: 1em 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
 				}
 
 					#menu > .inner > ul > li a {
-						display: block;
-						padding: 1em 0;
+						/* display: block; */
+						padding: 1em 0.9em;
 						line-height: 1.5;
 						border: 0;
 						color: inherit;
 					}
 
 					#menu > .inner > ul > li:first-child {
+						padding: 0;
 						border-top: 0;
 						margin-top: -1em;
 					}

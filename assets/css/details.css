@@ -40,6 +40,15 @@
   text-transform: none;
 }
 
+#menu li div {
+  display: flex;
+  align-items: center;
+}
+
+#menu li div a {
+  padding-left: 0.5em;
+}
+
 /* tiles */
 .project-title, .project-arrow, .tiles .icon {
   font-size: 1.3em;
