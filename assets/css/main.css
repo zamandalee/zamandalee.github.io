@@ -2774,6 +2774,10 @@ input, select, textarea {
 					margin: 2.5em 0 0 2.5em;
 				}
 
+				.project-arrow {
+					display: none;
+				}
+
 		}
 
 		@media screen and (max-width: 736px) {
