@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Jane Doe: Snippet</title>
+  <link rel="icon" href="../assets/imgs/favicon.png">
+
+  <link rel="stylesheet" href="../assets/home.css" />
+  <link rel="stylesheet" href="../assets/projectPage.css" />
+  <link href="https://cdn.bootcss.com/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Nav -->
+  <div id="nav" class="flex-between">
+    <a class="home-btn" href="../home.html">/Jane/Doe</a>
+    <div class="flex">
+      <a class="nav-link" href="../home.html#Work">Work</a>
+      <a class="nav-link" href="../home.html#About">About</a>
+      <a class="nav-link" href="" target="">Resume</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <section class="title" data-aos="fade-up" data-aos-duration="1000">
+    <h1>Snippet:<br /> an educational Chrome Extension</h1>
+    <img class="title-img" src="../assets/imgs/Snippet.png" />
+  </section>
+  <section id="Overview" class="overview" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Overview</h2>
+    <div>
+      <p>
+        Snippet is the Chrome Web extension that <span class="hl-salmon">fulfills the curiosity cravings</span> of every lifelong learner.
+        <br /><br />
+        Snippet provides <span class="hl-salmon">extracts of information</span> from a variety of categories in place of Chrome's New Tab page.
+        From vocabulary to biology, Snippet has users covered with easy-to-digest learnings that will keep their minds fresh with knowledge.
+        <br /><br />
+        For details, read on!
+      </p>
+    </div>
+
+    <div class="overview-info">
+      <div class="overview-item">
+        <p><strong>Type</strong></p>
+        <p>Frontend: JavaScript, jQuery, variety of APIs (Local Storage, Reddit, NYTimes, etc)</p>
+      </div>
+      <div class="overview-item">
+        <p><strong>Date</strong></p>
+        <p>Aug 2018, updated Aug 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Motivation" class="grey" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Motivation</h2>
+    <p>
+      During a gap year before attending university, I learned the basics of full-stack development at a coding bootcamp.
+      After the bootcamp concluded, I missed the fast-paced environment and constant stream of new information.
+    </p>
+    <p>
+      I wanted to create a lightweight, elegant project to help people <span class="hl-yellow">learn "snippets" of information outside of school</span>.
+      My hope is that Snippet's snippets <span class="hl-yellow">brighten the user's day in addition to teaching them interesting facts</span>.
+    </p>
+  </section>
+
+  <section id="Product" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Product</h2>
+    <p>Snippet has 4 information "snippet" widgets (<span class="hl-yellow">fact, brainteaser, news, vocabulary</span>) and some additional features, some of which are powered by APIs.</p>
+    <div class="flex-start">
+      <ul class="snippet-product-p">
+        <li><span class="hl-yellow">User's name</span>: prompt upon first use, and users are greeted with their name from then on</li>
+        <li><span class="hl-yellow">Fact</span>: History/Science/Today I Learned (TIL) tabs, Reddit API</li>
+        <li><span class="hl-yellow">News</span>: New York Times top stories API</li>
+        <li><span class="hl-yellow">Vocabulary</span>: Oxford Dictionary API</li>
+        <li><span class="hl-yellow">Todos and Snippet history</span>: Chrome Local Storage API</li>
+      </ul>
+      <img class="snippet-product-img" src="../assets/imgs/snippet/snippet-product.png" />
+    </div>
+  </section>
+
+  <section id="Features" class="grey" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Features</h2>
+    <p>
+      For more details on the technical implmentation of the extension, especially the favoriting, flipping, and carousel features,
+      check out the <a href="">Github repository</a> or the <a href="">download site</a>!
+    </p>
+    <div class="flex">
+      <div class="feature-item">
+        <img src="../assets/imgs/snippet/favorites.gif" />
+        <div class="caption">Favoriting</div>
+      </div>
+      <div class="feature-item">
+        <img src="../assets/imgs/snippet/brainteaser.gif" />
+        <div class="caption">Brainteaser widget flipping</div>
+      </div>
+      <div class="feature-item">
+        <img src="../assets/imgs/snippet/carousel.gif" />
+        <div class="caption">News widget carousel</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Takeaways" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Takeaways</h2>
+    <p>
+      By building Snippet, I gained experience leveraging public APIs,
+      learned the mechanics several interesting frontend components,
+      and discovered how to deploy a scalable Chrome extension.
+      <br /><br />
+      Furthermore, several of my friends and family members added Snippet to their browser.
+      Beyond receiving helpful design feedback and encouragement, it was also rewarding to share a fun and useful app with them!
+    </p>
+  </section>
+
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
+  <script src="../scripts/projectPage.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

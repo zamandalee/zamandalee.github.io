@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Lee</title>
+
+  <link rel="stylesheet" href="assets/home.css" />
+  <link rel="icon" href="assets/imgs/favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+  <!-- Nav -->
+  <div id="nav" class="flex-between">
+    <a class="home-btn" href="home.html">/Amanda/Lee</a>
+    <div class="flex">
+      <a class="nav-link" href="#Work">Work</a>
+      <a class="nav-link" href="#About">About</a>
+      <a class="nav-link" href="assets/AmandaLee_Resume2021.pdf" target="_blank">Resume</a>
+      <a class="hamburger" onClick="openHamburgerMenu()">
+        <span class="fa fa-bars"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hamburger menu contents -->
+  <div id="menu">
+    <div id="nav" class="flex-between">
+      <a class="home-btn" href="home.html">/Amanda/Lee</a>
+      <a class="hamburger" onClick="closeHamburgerMenu()">
+        <span class="fas fa-times"></span>
+      </a>
+    </div>
+    <div class="flex-col links">
+      <a class="nav-link" onClick="menuLink('#Work')">Work</a>
+      <a class="nav-link" onClick="menuLink('#About')">About</a>
+      <a class="nav-link" href="">Resume</a>
+    </div>
+  </div>
+
+  <!-- <div class="flex-start banner">
+    <img src="assets/imgs/banner-img.png" alt="Amanda's profile picture" />
+    <div>/Amanda/Lee</div>
+  </div> -->
+
+  <!-- Header -->
+  <div class="flex-col-start header">
+    <h1>Hi, I'm Amanda!</h1>
+    <h2>I'm a software developer, and I <a href="https://github.com/zamandalee" target="_blank">make things</a> in Providence, RI.</h2>
+    <div id="Work" class="flex-start icons">
+      <div><a class="flex icon" href="https://www.linkedin.com/in/a7e/" target="_blank"><span class="fab fa-linkedin-in"></span></a></div>
+      <div><a class="flex icon" href="https://github.com/zamandalee" target="_blank"><span class="fab fa-github"></span></a></div>
+      <div><a class="flex icon" href="mailto:a+website@zalee.me"><span class="far fa-envelope"></span></a></div>
+    </div>
+  </div>
+
+  <!-- Work section -->
+  <section class="home-section">
+    <div class="flex-start tab-headers">
+      <h2 id="default-tab" class="tab-link" onclick="displayTabContent(event, 'projects')">Projects</h2>
+      <!-- <h2 class="tab-link" onclick="displayTabContent(event, 'work')">Work</h2> -->
+      <h2 class="tab-link" onclick="displayTabContent(event, 'skills')">Skills</h2>
+    </div>
+
+    <!-- Projects tab content (tiles) -->
+    <div id="projects" class="tab-content tile">
+      <div class="tile-item">
+        <a href="projects/snippet.html">
+          <img class="tile-img" src="assets/imgs/Snippet.png" alt="Snippet project mockup" />
+          <div class="flex-col overlay">
+            <h3>Snippet</h3>
+            <p>Chrome Extension that delivers daily "snippets" to promote lifelong learning</p>
+          </div>
+        </a>
+      </div>
+      <div class="tile-item">
+        <!-- <a href="projects/leeway.html"> -->
+        <a href="">
+          <img class="tile-img" src="assets/imgs/Leeway.png" alt="Snippet Chrome Extension mockup on Macbook" />
+          <div class="flex-col overlay">
+            <h3>Leeway</h3>
+            <p>A full-stack clone of Slack, using Rails/React/Redux/Postgres</p>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="tile-item">
+        <a href="projects/.html">
+          <img class="tile-img" src="assets/imgs/temp.jpg" alt="Temp project mockup" />
+          <div class="flex-col overlay">
+            <h3>MNIST</h3>
+            <p>[DL project here]</p>
+          </div>
+        </a>
+      </div> -->
+      <div class="tile-item">
+        <a href="projects/comaxRedesign.html">
+          <img class="tile-img" src="assets/imgs/Comax.png" alt="Comax website mockup on Macbook and mobile" />
+          <div class="flex-col overlay">
+            <h3>Comax Redesign</h3>
+            <p>An overhaul of Comax Agricultural Technology's website, with a focus on usability and accessibility</p>
+          </div>
+        </a>
+      </div>
+      <div class="tile-item">
+        <a href="projects/electry.html">
+          <img class="tile-img" src="assets/imgs/Iterative.png" alt="Collage of Electry design project mockups" />
+          <div class="flex-col overlay">
+            <h3>Electry Design</h3>
+            <p>Iterative design of the web platform for Electry (YC '20, LinkedIn for blue collar workers)</p>
+          </div>
+        </a>
+      </div>
+      <div class="tile-item">
+        <a href="projects/subscriptionTracker.html">
+          <img class="tile-img" src="assets/imgs/Subscription.png" alt="Subscription Tracker project mockup on Macbook" />
+          <div class="flex-col overlay">
+            <h3>Subscription Tracker</h3>
+            <p>A subscription services manager empowering users to stay on top of recurring expenses</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Work tab content -->
+    <div id="work" class="tab-content tile">
+      <div class="tile-col">
+        <div class="tile-item">
+          <img src="assets/imgs/microsoft.png" alt="Microsoft logo" />
+          <h4>Cloud & AI team</h4>
+          <p>full-stack intern (summer 2021)</p>
+        </div>
+      </div>
+      <div class="tile-col">
+        <div class="tile-item">
+          <img src="assets/imgs/chartbeat.png" alt="Chartbeat logo" />
+          <h4>content analytics, Betaworks '10</h4>
+          <p>HackNY Fellow and full-stack/data engineering intern (summer 2020)</p>
+        </div>
+      </div>
+      <div class="tile-col">
+        <div class="tile-item">
+          <img src="assets/imgs/buildzoom.png" alt="BuildZoom logo" />
+          <h4>marketplace for construction, YC '13</h4>
+          <p>full-time, full-stack engineer (2018-19)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills tab content -->
+    <div id="skills" class="tab-content skills-grid">
+      <div class="gr1 gc1-header">Languages</div>
+      <div class="gr1 gc2">Javascript, Python, Ruby, HTML/CSS</div>
+      <div class="gr2 gc1-header">Frameworks</div>
+      <div class="gr2 gc2">React, Redux, GraphQL, Django, Tensorflow, Jupyter, Rails</div>
+      <div class="gr3 gc1-header">Misc</div>
+      <div class="gr3 gc2">MySQL, PostgreSQL, AWS</div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="About" class="home-section">
+    <h2>About</h2>
+    <div class="flex">
+      <img href="assets/imgs" />
+      <p class="about-description">
+        Hi again, and thanks for visiting 🙂 As a full-stack engineer, and I apply technical creativity to engineering and product problems.
+        Currently, I'm a student at Brown University, where I dabble in machine learning and investing.
+        <br /><br />
+        When I'm away from my desk, you can find me at bakeries, running along Blackstone Blvd, and talking to founders.
+      </p>
+    </div>
+  </section>
+
+  <footer class="flex-col">
+    <div>Designed & built by Amanda Lee ✨2020</div>
+    <div class="flex icons">
+      <a href="https://www.linkedin.com/in/a7e/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+      <a href="https://github.com/zamandalee" target="_blank"><span class="fab fa-github"></span></a>
+      <a href="mailto:a+website@zalee.me"><span class="far fa-envelope"></span></a>
+    </div>
+  </footer>
+</body>
+<script>
+  // Nav hamburger menu
+  const menu = document.getElementById("menu");
+  function openHamburgerMenu() {
+    menu.style.display = "flex";
+  }
+  function closeHamburgerMenu() {
+    menu.style.display = "none";
+  }
+  function menuLink(anchor) {
+    closeHamburgerMenu();
+    window.location.href = anchor;
+  }
+
+  // Work section tabs
+  document.getElementById("default-tab").click();
+  function displayTabContent(e, tabName) {
+    // Hide all "tab-content"s
+    const tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+
+    // Remove class "active" from all "tab-link"s
+    const tabLinks = document.getElementsByClassName("tab-link");
+    for (let i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace("active", "");
+    }
+
+    // Show current tab, make its button "active"
+    if (tabName === 'skills') {
+      document.getElementById(tabName).style.display = "grid";
+    } else {
+      document.getElementById(tabName).style.display = "flex";
+    }
+    e.currentTarget.className += " active";
+  }
+</script>
+</html>

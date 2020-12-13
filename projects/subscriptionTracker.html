@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Jane Doe: Subscription Manager</title>
+  <link rel="icon" href="../assets/imgs/favicon.png">
+
+  <link rel="stylesheet" href="../assets/home.css" />
+  <link rel="stylesheet" href="../assets/projectPage.css" />
+  <link href="https://cdn.bootcss.com/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Nav -->
+  <div id="nav" class="flex-between">
+    <a class="home-btn" href="../home.html">/Jane/Doe</a>
+    <div class="flex">
+      <a class="nav-link" href="../home.html#Work">Work</a>
+      <a class="nav-link" href="../home.html#About">About</a>
+      <a class="nav-link" href="" target="">Resume</a>
+    </div>
+  </div>
+
+  <section class="title" data-aos="fade-up" data-aos-duration="1000">
+    <h1>Subscription Manager:<br /> a React App</h1>
+    <img class="title-img" src="../assets/imgs/subscription/submanager.png" />
+  </section>
+  <section id="Overview" class="overview" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Overview</h2>
+    <div>
+      <p>
+        This app is a subscription tracker, displaying a <span class="hl-salmon">list of the user's subscription services</span>
+        that's the <span class="hl-salmon">filterable/sortable</span> on its category and price properties.
+        <br /><br />
+        When flagged, a subscription item is added to the <span class="hl-salmon">"Infrequently Used" aggregation</span>,
+        marking it as a service the user is considering cancelling.
+        </span>
+
+        <br /><br />
+        For details, read on!
+      </p>
+    </div>
+    <div class="overview-info">
+      <div class="overview-item">
+        <p><strong>Type</strong></p>
+        <p>Design/frontend: Javascript, React, HTML/CSS</p>
+      </div>
+      <div class="overview-item">
+        <p><strong>Date</strong></p>
+        <p>Dec 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Motivation" class="grey" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Motivation</h2>
+      <div class="flex-start">
+        <p class="motivation-p">
+          <span class="hl-salmon">Consumers are increasingly using monthly subscription services</span> — streaming
+          applications like Netflix, software platforms like Figma,
+          and ecommerce servies like Prime. It's often difficult to keep track of these recurring fees, yet a few of these
+          $5-20 / month services can build up to significant expenses.
+
+          <br /><br />
+          This project is a simple web platform that allows users to be more <span class="hl-salmon">financially empowered</span> about their spendings.
+          They'll be <span class="hl-salmon">well-informed of their ongoing expenses</span> and can save by cancelling services they use infrequently.
+        </p>
+        <img class="motivation-img" src="../assets/imgs/subscription/subscriptions.png" />
+      </div>
+  </section>
+
+
+  <section id="Usability Principles" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Usability Principles</h2>
+    <p>Usability of a platform can be broken up into 3 sub-criteria.</p>
+    <ul>
+      <li class="gray"><span class="hl-salmon">Learnability</span>: how easy is it for users to accomplish tasks during their first interaction?</li>
+      <li class="gray"><span class="hl-salmon">Memorability</span>: when users revisit the interface, how easily can they reestablish proficiency?</li>
+      <li class="gray"><span class="hl-salmon">Efficiency</span>: once users have learned the design, how quickly can they perform tasks?</li>
+    </ul>
+
+    <h3>Features</h3>
+    <img class="tooltips-img" src="../assets/imgs/subscription/tooltips1.png" />
+    <p>The Subscription Manager's features optimize the above principles.</p>
+    <ul>
+      <li><span class="hl-salmon">Simplicity</span>: total of 3 dropdowns + 3 buttons, no extranneous visuals minimize distractions and make the interface easy to learn/recall</li>
+      <li><span class="hl-salmon">Tooltips</span>: introduce/remind users of functionality, only appear on hover, so don't distract from core features</li>
+    </ul>
+  </section>
+
+  <section id="Product" class="grey" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Product</h2>
+    <p class="product-p">
+      For technical implementation details, view the <a href="https://github.com/zamandalee/subscription-tracker#future-directions">Github repo here</a>.
+      To test the app yourself, check out the <a href="https://my-subscriptions.herokuapp.com/">live site</a>!
+      <br /><br />
+      Here's a preview:
+    </p>
+    <img class="product-img" src="../assets/imgs/subscription/filtersort.gif" />
+  </section>
+
+
+  <section id="Takeaways" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Takeaways</h2>
+    <p>
+      A major motivating factor for this project is my belief that a subscription tracker is a product that many people would appreciate, myself included.
+      Thus, <span class="hl-salmon">usability principles and empathizing with user pain points</span> were very important in the creation of this app.
+      <br /><br />
+      I really enjoyed viewing the idea from the <span class="hl-salmon">perspective of a designer/developer in addition to a consumer</span>,
+      and I encountered design choice dilemmas that more challenging than I expected!
+      <br /><br />
+      I'm hoping to build upon this project further with the more sophisticated features and functionality outlined in the
+      <a href="https://github.com/zamandalee/subscription-tracker#future-directions">README</a>.
+      Stay tuned for more developements :)
+    </p>
+  </section>
+
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
+  <script src="./projectPage.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

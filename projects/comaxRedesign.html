@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jane Doe: Comax Redesign</title>
+    <link rel="icon" href="../assets/imgs/favicon.png">
+
+    <link rel="stylesheet" href="../assets/home.css" />
+    <link rel="stylesheet" href="../assets/projectPage.css" />
+    <link href="https://cdn.bootcss.com/aos/2.3.4/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <div id="nav" class="flex-between">
+      <a class="home-btn" href="../home.html">/Jane/Doe</a>
+      <div class="flex">
+        <a class="nav-link" href="../home.html#Work">Work</a>
+        <a class="nav-link" href="../home.html#About">About</a>
+        <a class="nav-link" href="" target="">Resume</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <section class="title" data-aos="fade-up" data-aos-duration="1000">
+      <h1>A Responsive Redesign:<br>Comax Agricultural Technology</h1>
+      <img class="title-img" data-aos="fade-up" data-aos-duration="1000" src="../assets/imgs/comax/final1.png">
+    </section>
+    <section id="Overview" class="overview" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Overview</h2>
+      <div>
+        <p class="quote">
+          "That beautiful feeling of enrichment that comes from new discoveries, new ways of doing the same thing better than
+          before." <br/> - Massimo Vignelli</p>
+        <p>
+          <span class="hl-yellow">Comax is a livestock technology firm</span> specializing in the R&D, design, and construction of livestock farms and equipment.
+          This project is a redesign of Comax's website with a focus on <span class="hl-yellow">usability and accessibility improvements</span>.
+        </p>
+      </div>
+      <div class="overview-info">
+        <div class="overview-item">
+          <p><strong>Type</strong></p>
+          <p>HTML/CSS, Design</p>
+        </div>
+
+        <div class="overview-item">
+          <p><strong>Date</strong></p>
+          <p>October 2020</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Problems" data-aos="fade-up" data-aos-duration="1000" class="grey">
+      <h2>Problems</h2>
+      <img id="problems-img" src="../assets/imgs/comax/old-homepage.png" alt="">
+      <span class="caption"><a class="normal" href="http://www.comaxtek.com/en/">Comax's old homepage</a></span>
+      <p>There are several features of the current homepage that lead to usability and accessibility issues.</p>
+      <div>
+        <h3>Usability</h3>
+        <p class="gray italic">Usability has 3 sub-categories — learnability, memorability, and efficiency.</p>
+        <ul>
+          <li><span class="hl-yellow">Industry</span> isn't immediately obvious: what does Comax do?</li>
+          <li><span class="hl-yellow">Products and services</span> aren’t highlighted: how do they do it?</li>
+          <li><span class="hl-yellow">Point of difference</span> isn't emphasized: are they good at it? better than its competition?</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Accessibility</h3>
+        <p class="gray italic">Are users of different abilities able to interact effectively? This was tested using <a class="gray" href="https://wave.webaim.org/">WebAIM WAVE</a>.</p>
+        <ul>
+          <li>Critical information is in an <span class="hl-yellow">image carousel</span>, making it inaccessible for screen-readers</li>
+          <li>No <span class="hl-yellow">hierarchy</span> make navigation confusing</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="Low-Fi" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Low-Fi Wireframes</h2>
+      <p>I began by using Balsamiq to create low-fidelity wireframes of the redesigned website on 3 devices: a desktop, a tablet, and a phone.</p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FO3SIYQa9thFkPmCoqdQcc9%2FUntitled"
+        allowfullscreen></iframe>
+    </section>
+
+
+    <section id="Hi-Fi" data-aos="fade-up" data-aos-duration="1000" class="grey">
+      <h2>Hi-Fi Prototypes</h2>
+      <p> I then used Figma to illustrate high-fidelity prototypes for each of the 3 device types.</p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQIYeD3qknKv7enUq3vZzsm%2FHiFi-Mockups%3Fnode-id%3D0%253A1"
+        allowfullscreen></iframe>
+      <span class="caption">High-fidelity style guide, and desktop, tablet, mobile prototypes</span>
+
+      <p>Several screens in the above Figma embed illustrate <span class="hl-yellow">how the interface behaves responsively</span>.</p>
+      <p>The first frame is a <span class="hl-yellow">style guide</span>, illustrates how the interface's interactive elements — <span class="hl-yellow">navigation links and buttons</span> — behave, and
+        its different static components — <span class="hl-yellow">color, typography, and icons</span>.</p>
+    </section>
+
+    <section id="Responsive Redesign" class="resp-redesign grey" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Responsive Redesign</h2>
+      <p>Finally, the end product: check out the <strong><a href="https://comax-redesign.herokuapp.com/">responsive redesign of Comax's website here</a></strong>!
+        <br/><br />
+
+        Feel free to <span class="hl-yellow">experiment with the screen size</span> or simulate the interface on different devices using Chrome Inspector.
+        Excepting the navigation bar, the page was built entirely <span class="hl-yellow">from scratch</span>.
+      </p>
+      <p>Here's a preview of the interface's desktop view (spoiler: it looks almost identical to the hi-fi mockups!):</p>
+      <div class="flex-col">
+        <img class="final-hero" src="../assets/imgs/comax/final1.png" alt="Final product screen 1">
+        <div class="flex">
+          <img src="../assets/imgs/comax/final2.png" alt="Final product screen 2">
+          <img src="../assets/imgs/comax/final3.png" alt="Final product screen 3">
+          <img src="../assets/imgs/comax/final4.png" alt="Final product screen 4">
+        </div>
+      </div>
+      <span class="caption"><a class="normal" href="https://comax-redesign.herokuapp.com/">Comax's new homepage!</a></span>
+    </section>
+
+    <section id="Takeaways" class="last-section" data-aos="fade-up" data-aos-duration="1000" class="gray">
+      <h2>Takeaways</h2>
+      <p>
+        <span class="hl-yellow">This project demanded consideration of user needs and priorities</span>.
+        We often take clean, informative webpages for granted, without realizing the time investment that goes into them.
+        After intentionally focusing on usabilitity and accessibility,
+        I've learned a lot about <span class="hl-yellow">how a website influences the user's impression of a brand</span>.
+      </p>
+    </section>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
+    <script src="../scripts/projectPage.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+</html>
