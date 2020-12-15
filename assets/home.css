@@ -26,7 +26,7 @@ html {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--page-margin);
+  padding: 0 60px;
 }
 h2, h3 {
   margin-bottom: 17px;
@@ -35,7 +35,7 @@ h2, h3 {
 }
 a {
   border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
-  transition: border-bottom-color 0.2s ease, color 0.05s ease;
+  transition: border-bottom-color 0.2s ease, color 0.1s ease;
   text-decoration: none;
 }
 a:hover {
@@ -58,7 +58,7 @@ a:hover {
 }
 
 /* Flex */
-.flex, .flex-start, .flex-end {
+.flex, .flex-start, .flex-end, .flex-between, .flex-col {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,15 +71,10 @@ a:hover {
   justify-content: flex-end;
 }
 .flex-between {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .flex-col {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Nav */
@@ -340,9 +335,30 @@ a:hover {
 }
 
 /* About */
+.about-content > img {
+  width: 35%;
+}
 .about-description {
+  width: 60%;
   font-size: 18px;
   font-weight: 300;
+  line-height: 1.5;
+}
+.about-description a {
+  border-bottom: 1px dotted var(--med-blue);
+}
+.about-description li:before {
+  font-size: 10px;
+  color: var(--mid-gray);
+}
+@media screen and (max-width: 900px) {
+  .about-content > img, .about-content > * { width: 80%; }
+}
+@media screen and (max-width: 850px) {
+  .about-content > img, .about-content > * { width: 90%; }
+}
+@media screen and (max-width: 750px) {
+  .about-content > img, .about-content > * { width: 100%; }
 }
 
 /* Footer */
