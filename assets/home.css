@@ -26,7 +26,7 @@ html {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 var(--page-margin);
 }
 h2, h3 {
   margin-bottom: 17px;
